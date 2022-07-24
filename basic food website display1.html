@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--It opens the linked document in the top frame (full body) of another window-->
+
+    <base target="_top">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+    <title> Pizza Express </title>
+
+    <link rel="icon" type="image/icon" href="icon3.png"> <!--icon of the website-->
+    
+    <style>
+
+        .heading{
+               display:flex;
+               flex-direction: column;
+               height: 100%;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+                background-color:rgba(214, 216, 214, 0.464);
+                font-family: 'Amiri', serif;
+
+        }
+
+
+        .slice{
+           
+           
+            color:rgb(0, 0, 0, 0.821);
+            text-decoration:none;
+            font-family: 'Dancing Script', cursive;
+            background-color:rgba(214, 216, 214, 0.464);
+            position:relative;
+             height: 100%;
+                width: 100%;
+            
+        }
+              .description{
+                   color:rgb(249, 249, 249);
+                  
+                   text-decoration:none;
+                    position:relative;
+             height: 100%;
+                width: 100%;
+                font-family: 'Fuggles', sans-serif;
+                padding:10px;
+              }
+
+        .mymenu a{
+              color:rgb(244, 240, 240);
+              position:relative;
+             
+              background-color: rgb(144, 62, 62);
+              font-family: 'Nanum Brush Script', cursive;
+              padding:10px;
+              padding-left:10px;
+              padding-right:10px;
+              border-radius: 12px;
+              font-size: 25px;
+        }
+                           
+
+
+        .mymenu a:hover{
+                        color:rgb(252, 4, 4);
+                        background-color:rgb(255, 255, 255);
+                        opacity: 0.5;
+
+            }
+             
+     
+
+            
+                 
+                 
+        
+        .bgimg{
+            position:relative;
+            overflow:scroll;
+            background-image:url("https://img.onmanorama.com/content/dam/mm/en/food/features/images/2021/10/17/pizza.jpg");
+            max-width:100%;
+            height:auto;
+            background-size:cover;                       
+            height:650px;
+            background-repeat: no-repeat;
+            position:relative;
+            
+             
+        }  
+        
+        .nav a{
+            float:left;
+            width:100px;
+            overflow:hidden;
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            background-color: rgba(22, 12, 12, 0.211);
+            padding: 14px 16px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-size:x-large;
+        }
+
+        .nav a:hover{
+            color:black;
+            background-color:white;
+           opacity: 0.5;
+        }
+
+        .opentag{
+              color:rgb(253, 253, 253);
+              position:relative;
+              bottom:80px;
+              left:16px;
+              background-color: rgb(164, 96, 96);
+              padding:5px;
+              padding-left:10px;
+              padding-right:10px;
+              border-radius: 12px;
+              
+              
+              font-family: 'Nanum Brush Script', cursive;
+              font-size:50px;
+
+        }
+
+        .bg2{
+            height:100%;
+            
+            overflow:scroll;
+            background-repeat: no-repeat;
+            background-size:auto;
+            background-image:url("https://www.chicagopizza.in/wp-content/uploads/2021/10/Chicago-Pizza-ChhatarpurN-Delhi.jpg")
+        }
+
+
+        .menudesign{ 
+            position:relative;
+            margin:100%;
+            margin-left: 100px;
+            margin-right: 100px;
+            
+            border-color:black;
+            border-radius: 50px;
+           
+         
+            
+            
+        }
+        
+        
+        
+        
+
+        table, th, td {
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+
+
+
+         h1{
+            text-align:center;
+            background-color:black;
+            border:2px solid black;
+            color:white;
+        }
+         
+        th{
+           width:50px;
+           height:70px;
+        }
+
+
+
+
+        table, th{
+           color:white;
+           background-color:rgba(4, 4, 4, 0.47);
+           border-style:outset;
+           width:100px;
+          font-family:'Times New Roman', Times, serif;
+        }
+
+  
+        td{
+
+           background-color:black;
+           font-family:monospace;
+           font-size:20px;
+           text-align:center;
+        }
+
+    
+        .center{
+            width:100%;
+            table-layout:inherit;
+            position:relative;
+            height:500px;
+            margin-bottom:100px;
+        }
+
+        caption{
+           font-family:'Tangerine', serif;
+           font-size:100px;
+           border-style: outset;
+           border-top-left-radius: 50px;
+           border-top-right-radius:50px;
+        }
+
+        .end{
+          background-color: rgb(5, 5, 5);
+          color:white;
+          padding:50px;
+          font-family:'Tangerine', serif;
+          font-size:50px;
+          margin-top:50px;
+          display: "block";
+        }
+
+
+       
+
+    </style>
+
+    </head>
+
+    <body style="background-color:black;">
+       
+        <div class="bgimg" style="text-align:center">    <!--bgimg-first background image-->
+            
+            <!--navigation bar-->
+
+                <nav>
+                    <div class="nav">
+                        <a href="Home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+
+                    
+                        <div class="container">
+
+                            <!--restaurant name on bgimg-->
+
+                            <div class="heading" style="font-size:50px;"><link
+                                href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Amiri:ital@1&family=Cinzel:wght@500&family=Sacramento&family=Shadows+Into+Light&display=swap"
+                                rel="stylesheet">
+                                <h1>PIZZA EXPRESS</h1>
+
+                            </div>
+
+                                
+                                  <div class="open">
+                                    <!--opening hours text-->
+
+                                  <span class="opentag" style="font-size:25px;" ><link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+                                    Open from 10am to 12pm</span>
+                                </div>
+
+
+                                <div class="description">
+
+                                    <!--restaurant name description-->
+
+                                    <span class="description" style="font-size:150px;  text-shadow:3px 10px 5px rgb(242, 7, 7);"><link
+                                        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Amiri:ital@1&family=Cinzel:wght@500&family=Dancing+Script&family=Fuggles&family=Sacramento&family=Shadows+Into+Light&display=swap"
+                                        rel="stylesheet">Slice of Heaven</span>
+                                        </div>
+
+
+                                        <div id="menu" class="mymenu">
+
+                                        <!--menu bar-->
+                                    <a href="#menu"><link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+                                        Let me see the menu</a>
+                                    </div>
+                                </div>
+                             </nav>
+                        <br>
+                    <br>
+               
+            <div class="bg2"> <!--bg2-second background-->
+    
+                <div id="menu" class="menudesign" style="overflow-x:auto;">
+                
+                <!--starting of table-menu table design-->
+                    <table style="height:400px" class="center">
+
+                        <!--caption tag is the table caption-->
+
+                        <caption style="color:rgb(5, 5, 5); background-color:rgb(197, 162, 162);">
+                            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+                            The Menu
+                        </caption>
+
+
+                    <!--<thead> tag is used to give the header of a group of a table-->
+
+                        <thead>
+                            <tr>
+                
+                                <th scope="col">ITEM</th>
+                
+                                <th scope="col">ITEM NAME</th>
+                
+                
+                                <th scope="col">COST</th>
+                
+                                <th scope="col">QUANTITY</th>
+                            </tr>
+                        </thead><!--end of <theat> tag-->
+
+                        <tbody>
+                <!--The <tbody> tag is used to group the body content in an HTML table-->
+
+
+
+                    <!--The scope attribute specifies whether-->
+                        <!--a header cell is a header for a column, row, or--> 
+                            <!--group of columns or rows-->
+                
+                        <tr>
+
+                            <td scope="row"><img src="pizza Marinara.jpg" style="padding:100px;"></td>
+                        <!--padding is used in <img> tag to adjust the size of the image in td-->
+
+                            <td>MEAPOLITAN PIZZA</td>
+                            <td>260 &#8377</td>
+                    <!--&#8377 is the html code for rupees symbol-->
+
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                
+                        <tr>
+                            <td scope="row"><img src="Chicago pizza.jpg" style="padding:100px;"></td>
+                            <td>Chicago Pizza</td>
+                            <td>300 &#8377</td>
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                
+                
+                        <tr>
+                            <td scope="row"><img src="California Pizza.jpg" style="padding:100px;"></td>
+                            <td>California Pizza</td>
+                            <td>320 &#8377</td>
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                
+                        <tr>
+                            <td scope="row"><img src="Detroit Pizza.jpg" style="width:300px; padding:100px;"></td>
+                            <td>Detroit Pizza</td>
+                            <td>360 &#8377</td>
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                
+                
+                        <tr>
+                            <td scope="row"><img src="Greek Pizza.webp" style="width:300px; padding:100px;"></td>
+                            <td>Greek Pizza</td>
+                            <td>400 &#8377</td>
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                
+                
+                
+                        <tr>
+                            <td scope="row"><img src="pizza Marinara.jpg" style="padding:100px;"></td>
+                            <td>MEAPOLITAN PIZZA</td>
+                            <td>480 &#8377</td>
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                
+                
+                
+                        <tr>
+                            <td scope="row"><img src="Sicilian Pizza.webp" style="width:300px; padding:100px;"></td>
+                            <td>Sicilian Pizza</td>
+                            <td>520 &#8377</td>
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                
+                
+                
+                        <tr>
+                            <td scope="row"><img src="St. Louis Pizza.jpg" style="width:300px; padding:100px;"></td>
+                            <td>St. Louis Pizza</td>
+                            <td>550 &#8377</td>
+                            <td style="text-align:center;">1</td>
+                        </tr>
+                        </tbody><!--end of <tbody> tag-->
+
+                    </div>
+                    
+
+                </table>
+ 
+                   </div>
+
+                   <div class="end">
+                    <span>~&#10084; Thank You For Visiting &#10084;~</span><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+                <!--&#10084 is the html code for heart emoji-->
+
+                </div>
+         </body>
+    </html>
